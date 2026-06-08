@@ -6,13 +6,13 @@
 class Datapress < Formula
   desc "Fast multi-backend (DuckDB / DataFusion) HTTP server over Parquet and Delta"
   homepage "https://datap-rs.org"
-  version "0.4.11"
+  version "0.4.13"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/jeroenflvr/datapress/releases/download/v#{version}/datapress-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "9adabd7b0827eaaa68dca6a9da702f009fc756ff5c8dca37a0b09a36ff7b43c0"
+      sha256 "dce48e5c5de882ef0875e6195efefea4541ba581a58c9748e68e92a5183437cc"
     end
     on_intel do
       odie "datapress has no prebuilt Intel macOS binary. Install with: cargo install datapress"
@@ -22,11 +22,11 @@ class Datapress < Formula
   on_linux do
     on_arm do
       url "https://github.com/jeroenflvr/datapress/releases/download/v#{version}/datapress-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6e16556d8cc507ac4eace62c079e7ef1704c8f44114581353f29face40d3009b"
+      sha256 "5a33835dea5b575796e1290489d71630e5074014d37aa2ff5a0e446b6eb2e586"
     end
     on_intel do
       url "https://github.com/jeroenflvr/datapress/releases/download/v#{version}/datapress-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5c4613505502208eb71cc647a2d5b536d7efd374433ccb974725f7e1de4d22a8"
+      sha256 "cc3f90b25c131f4e9b1e7b1352c2f010a1b902edc07b0e6c9c1900a609fddc67"
     end
   end
 
